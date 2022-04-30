@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka+One&display=swap');
+
+.body-app {
+  background-image: url(https://th.bing.com/th/id/R.996fbfac6c1fef2acd689b5ecdd09e1c?rik=dAxeHH3Td1Ufmg&pid=ImgRaw&r=0);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.title-home {
+  color: #fff;
+  text-shadow: 0px 5px #aaa;
+  font-family: 'Fredoka One';
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.carrousel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.HTML-title {
+  color: #FFF;
+}
