@@ -23,7 +23,7 @@ export const Card = ({ title, decoration, url, onClick}: Props) => {
             <span className="green box"></span>
           </div>
         </div>
-        <div className="card__content">
+        <div className="card_content">
           <div className="card-container">
             <span className='title'>{title} { decoration } </span>
             <button>

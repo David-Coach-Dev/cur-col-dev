@@ -1,28 +1,31 @@
-import React from 'react'
 // Styles
 import './CourseStyles.scss'
 // JSON DATA
 import curso from "../../json/curso.json";
+import { Video } from '../video/Video';
 //interface
 interface Props {
   titleCourse: string;
-  onClick?: () => void;
 }
 export const Course = ({titleCourse}:Props) => {
   const course = curso.map((curso) => {
       return (
         <>
-          <span className='title'>{curso.title}</span>
-          <button >
-            <span className="button_top">Ver ahora</span>
-          </button>
+          <div className='course'>
+            <div className='course-container'>
+              <span className='title'>{curso.title}</span>
+            </div>
+            <div className='video-container'>
+              <Video source={curso.url} h={640} w={640} />
+            </div>
+          </div>
         </>
       )
     }
     )
     return(
       <>
-        <div className="card" >
+        <div className='course'>
           <div className="tools">
             <div className="circle">
               <span className="red box"></span>
@@ -33,15 +36,14 @@ export const Course = ({titleCourse}:Props) => {
             <div className="circle">
               <span className="green box"></span>
             </div>
-          </div>
-            <h1 className='title-home'>{titleCourse}</h1>
-          <div className="card__content">
-            <div className="card-container">
-              {course}
+            <div>
+              <h1 className='title-course'>{titleCourse}</h1>
             </div>
           </div>
-        </div>
+          <div className='rep-container'>
+            {course}
+          </div>
+          </div>
       </>
     )
 }
-
